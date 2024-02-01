@@ -44,3 +44,67 @@ Java supports both implicit and explicit type conversion. Implicit type conversi
 
 Java provides various methods and operators for type conversion, allowing you to convert between different data types as needed.
 
+## Assignment Operators
+
+Assignment operators are used to assign values to variables. The most common assignment operator is `=`. Other assignment operators include `+=`, `-=`, `*=`, `/=`, and `%=`. For example:
+
+```java
+int a = 10; // assigns 10 to a
+a += 5; // adds 5 to a and assigns the result to a
+```
+
+## Relational Operators
+Relational operators are used to compare two values. They include `==` (equal to), `!=` (not equal to), `>` (greater than), `<` (less than), `>=` (greater than or equal to), and `<=` (less than or equal to). For example:
+
+```java
+int a = 10, b = 20;
+boolean result = a < b; // true because 10 is less than 20
+```
+
+## Logical Operators
+Logical operators are used to combine multiple conditions. They include `&&` (logical AND), `||` (logical OR), and `!` (logical NOT). For example:
+
+```java
+int a = 10, b = 20, c = 30;
+boolean result = (a < b) && (b < c); // true because both conditions are true
+```
+
+## If-Else Statement
+The if-else statement is used to perform different actions based on different conditions. For example:
+
+```java
+int a = 10, b = 20;
+if (a < b) {
+    System.out.println("a is less than b");
+} else {
+    System.out.println("a is not less than b");
+}
+```
+
+## Ternary Operator
+The ternary operator is a shorthand for the if-else statement. It takes three operands: a condition, a value if the condition is true, and a value if the condition is false. For example:
+
+```java
+int a = 10, b = 20;
+String result = (a < b) ? "a is less than b" : "a is not less than b";
+```
+
+## Switch Statement
+The switch statement is used to select one of many code blocks to be executed. For example:
+
+```java
+int day = 3;
+switch (day) {
+    case 1:
+        System.out.println("Monday");
+        break;
+    case 2:
+        System.out.println("Tuesday");
+        break;
+    case 3:
+        System.out.println("Wednesday");
+        break;
+    // ...
+}
+```
+The switch statement evaluates the expression inside the parenthesis and executes the corresponding case. The break keyword is used to exit the switch statement after a case is executed. If no case matches the expression, the code under default is executed, if provided.
